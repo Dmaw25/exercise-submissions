@@ -6,7 +6,24 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
+    // Iterate through numbers 1-100
+    for (let i = 1; i <= 100; ++i) {
+        // Fizzbuzz check
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        }
+        // Fizz check
+        else if (i % 3 === 0) {
+            console.log("fizz");
+        }
+        // Buzz check
+        else if (i % 5 === 0) {
+            console.log("buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -18,7 +35,44 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
+    // Input sanitization
+    // Validation for types and range
+    if (isNaN(Number(m)) || isNaN(Number(n)) || m > n) {
+        console.log("Invalid input(s)");
+        return;
+    }
 
+    // Validation for floats and convert them to integers
+    if (!Number.isInteger(m)) {
+        m = Math.floor(m) + 1;
+    }
+    if (!Number.isInteger(n)) {
+        n = Math.floor(n);
+    }
+
+    // Validate range again
+    if (m > n) {
+        console.log("Nothing to print");
+    }
+    
+    // Iterate through numbers m-n
+    for (let i = m; i <= n; ++i) {
+        // Fizzbuzz check
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        }
+        // Fizz check
+        else if (i % 3 === 0) {
+            console.log("fizz");
+        }
+        // Buzz check
+        else if (i % 5 === 0) {
+            console.log("buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -29,8 +83,48 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz4(m,n,fizzNum,buzzNum){
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    // Input sanitization
+    // Validation for types and range for m & n
+    if (isNaN(Number(m)) || isNaN(Number(n)) || m > n) {
+        console.log("Invalid input(s)");
+        return;
+    }
+    // Validation for types for fizzNum & buzzNum
+    else if (isNaN(Number(fizzNum)) || !Number.isInteger(fizzNum) || isNaN(Number(buzzNum)) || !Number.isInteger(buzzNum)) {
+        console.log("Invalid input(s)");
+        return;
+    }
 
+    // Validation for floats and convert them to integers
+    if (!Number.isInteger(m)) {
+        m = Math.floor(m) + 1;
+    }
+    if (!Number.isInteger(n)) {
+        n = Math.floor(n);
+    }
+
+    // Validate range again
+    if (m > n) {
+        console.log("Nothing to print");
+    }
+
+    // Iterate through numbers m-n
+    for (let i = m; i <= n; ++i) {
+        // Fizzbuzz check
+        if (i % fizzNum === 0 && i % buzzNum === 0) {
+            console.log("fizzbuzz");
+        }
+        else if (i % fizzNum === 0) {
+            console.log("fizz");
+        }
+        else if (i % buzzNum === 0) {
+            console.log("buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -42,8 +136,60 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
+function fizzBuzz4(m,n,numbers,terms){
+    // Input sanitization
+    // Validation for types and range for m & n
+    if (isNaN(Number(m)) || isNaN(Number(n)) || m > n) {
+        console.log("Invalid input(s)");
+        return;
+    }
 
+    // Validation for floats and convert them to integers
+    if (!Number.isInteger(m)) {
+        m = Math.floor(m) + 1;
+    }
+    if (!Number.isInteger(n)) {
+        n = Math.floor(n);
+    }
+
+    // Validation for numbers and terms
+    if (numbers.length !== terms.length) {
+        console.log("Invalid input(s)");
+        return;
+    }
+    for (let i in numbers) {
+        if (isNaN(Number(numbers[i])) || !Number.isInteger(numbers[i])) {
+            console.log("Invalid input(s)");
+            return;
+        }
+    }
+
+    // Iterate through numbers m-n
+    let output = "";
+    for (let i = m; i <= n; ++i) {
+        // Iterate through all numbers
+        for (let j in numbers) {
+            // If a condition matches
+            if (i % numbers[j] === 0) {
+                // Append the term to the end of the string
+                output += terms[j];
+            }
+        }
+        // Only print out terms when the string is not empty
+        if (output) {
+            console.log(output);
+        }
+        else {
+            console.log(i);
+        }
+
+        // Reset output
+        output = "";
+    }
 }
 
-
+// Test Cases
+//fizzBuzz1();
+//fizzBuzz2(45, 46);
+//fizzBuzz3(-3.6, 50, 3, -8);
+//fizzBuzz4(-50.5, -10, [3, 5, 6, 8, 9, 10], ["a", "b", "c", "d", "e", "f"]);
