@@ -28,19 +28,23 @@
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-    for( i=m;i<=n;i++) (m<=n)
-		if(i%5 === 0 && i%3 === 0){
-			('FizzBuzz');
-		} else if(i%3 === 0){
+    let lowernumber=m;
+    let highernumber=n;
+    if (lowernumber>= highernumber){
+        console.log("not valid");
+    } else for( i=lowernumber; i<=highernumber; i++){
+		if(i%5 == 0 && i%3 == 0){
+			console.log('FizzBuzz');
+		} else if(i%3 == 0){
 			console.log('Fizz');
-		} else if(i%5 === 0){
+		} else if(i%5 == 0){
 			console.log('Buzz');
 		} else {
             console.log(i);
         }
-        
-}
 
+    }
+}
 
 
 /*
