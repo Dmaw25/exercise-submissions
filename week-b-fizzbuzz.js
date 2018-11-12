@@ -118,6 +118,8 @@ function fizzBuzz4(m,n,numbers,terms){
 
     for (i=m;i<(n+1);i++)
     {
+
+
         if( i%(numbers[0])==0 && i%(numbers[1])==0)
         {
             console.log(terms[0],terms[1]);
@@ -135,6 +137,54 @@ function fizzBuzz4(m,n,numbers,terms){
             console.log(i);
         } 
     }
+}
+
+function fizzbuzz5(m,n,numbers,terms)
+{
+  /*  if (m>n)
+    {
+        return("m is greater than n so this really doesn't work");
+    }
+    if(numbers.length != terms.length){
+        console.log("the length of 'numbers' and 'terms' isn't equal which may not necessarily be an issue")
+    }
+
+    for (i=m;i<(n+1);i++)
+    {
+        let currentIndex =-1;
+
+    
+        numbers.forEach(foreachloop);
+        function foreachloop(value)
+        {
+            currentIndex++;
+            if(i%value==0)
+            console.log(terms[currentIndex], i);
+            else
+            {
+                console.log(i);
+            }
+        }
+    }*/
+    let Finalresult;
+    for (currentNumber=m;currentNumber<(n+1);currentNumber++)
+    {
+        for(currentdivider=0;currentdivider<(numbers.length+1);currentdivider++)
+        {
+            if(currentNumber%number[currentdivider]==0)
+            {
+                Finalresult[currentdivider]=terms[currentdivider];
+            }
+
+
+        }
+        if(Finalresult=undefined)
+        {
+            console.log(currentNumber);
+        }
+        else console.log(Finalresult);
+    }
+
 }
 
 
