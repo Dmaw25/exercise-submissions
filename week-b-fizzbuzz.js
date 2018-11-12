@@ -1,5 +1,4 @@
 
-
 /*
     Basic FizzBuzz:
     Write a function which prints out the numbers 1-100, with the following substitutions:
@@ -81,7 +80,7 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
 */
 function fizzBuzz3(m,n,numbers,terms){
     var count = 0;
-    if(m <= n){
+    if(m <= n && numbers.length === terms.length){
         for(i=m;i<=n;i++){
             count = 0;
             for(j=0;j<numbers.length;j++){
@@ -94,5 +93,7 @@ function fizzBuzz3(m,n,numbers,terms){
                 console.log(i);
             }
         }
+    }else{
+        console.log("Invalid Input");
     }
 }
