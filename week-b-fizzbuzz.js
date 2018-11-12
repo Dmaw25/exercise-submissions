@@ -69,11 +69,11 @@ function fizzBuzz1(){
     */
     function fizzBuzz4(m,n,fizzNum,buzzNum){
     
-        for(i = m, n; i < 101; m++, n++)
+        for(i = m; i <= n; i++)
         {
             console.log(i);
     
-            for(i=1; i<101; i++)
+            for(i = m;i <= n;i++)
             if( i % fizzNum == 0 && i % buzzNum == 0){
                 console.log("fizzbuzz");
             }
