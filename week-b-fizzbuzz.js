@@ -103,7 +103,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Write a function which prints out the numbers m-n with substitutions of: 
     each element of the numbers array replaced by the element at the same index of the terms array.
     e.g., to mimic the behavior of fizzBuzz1, you would call the function like so:
-    fizzBuzz4(1,100,[3,5],['fizz','buzz'])
+    fizzbuzz5(1,100,[3,5],['fizz','buzz'])
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
@@ -166,13 +166,16 @@ function fizzbuzz5(m,n,numbers,terms)
             }
         }
     }*/
-    let Finalresult;
     for (currentNumber=m;currentNumber<(n+1);currentNumber++)
     {
+        let Finalresult= ["cat","dog","pie"];
+        console.log(Finalresult[0])
         for(currentdivider=0;currentdivider<(numbers.length+1);currentdivider++)
+
         {
-            if(currentNumber%number[currentdivider]==0)
+            if(currentNumber%numbers[currentdivider]==0)
             {
+                console.log("hello it is I,"+terms[currentdivider]);
                 Finalresult[currentdivider]=terms[currentdivider];
             }
 
@@ -182,7 +185,10 @@ function fizzbuzz5(m,n,numbers,terms)
         {
             console.log(currentNumber);
         }
-        else console.log(Finalresult);
+        else 
+        {
+            console.log(Finalresult[1]);
+        }
     }
 
 }
