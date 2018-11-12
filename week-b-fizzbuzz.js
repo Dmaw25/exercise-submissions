@@ -6,7 +6,20 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
+    var num1;
+    for (i=1; i<101; i++){
+        num = i;
+        if (num % 3 == 0 && num % 5 == 0 && num != 0){
+            console.log(i + ' fizz buzz');
+        } else if (num % 3 == 0 && num != 0){
+            console.log(i + ' fizz');
+        } else if (num % 5 == 0 && num != 0) {
+            console.log(i + ' buzz');
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -19,6 +32,26 @@ function fizzBuzz1(){
 */
 function fizzBuzz2(m,n){
 
+    var lowNum = m;
+    var highNum = n;
+
+    if (lowNum > highNum){
+        console.log(" ERROR!: Numbers are not in proper order, Try Again!");
+    }
+
+    for (i=lowNum; i<(highNum+ 1); i++){
+        num = i;
+        if (num % 3 == 0 && num % 5 == 0 && num != 0){
+            console.log(i + ' fizz buzz');
+        } else if (num % 3 == 0 && num != 0){
+            console.log(i + ' fizz');
+        } else if (num % 5 == 0 && num != 0) {
+            console.log(i + ' buzz');
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -29,8 +62,29 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz4(m,n,fizzNum,buzzNum){
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    var lowNum = m;
+    var highNum = n;
+    var fNum = fizzNum;
+    var bNum = buzzNum;
 
+    if (lowNum > highNum){
+        console.log(" ERROR!: Numbers are not in proper order, Try Again!");
+    }
+
+    for (i=lowNum; i<(highNum+ 1); i++){
+        num = i;
+        if (num % fNum == 0 && num % bNum == 0 && num != 0){
+            console.log(i + ' fizz buzz');
+        } else if (num % fNum == 0 && num != 0){
+            console.log(i + ' fizz');
+        } else if (num % bNum == 0 && num != 0) {
+            console.log(i + ' buzz');
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -42,8 +96,32 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
+function fizzBuzz4(m,n,numbers,terms){
+    var lowNum = m;
+    var highNum = n;
+    
+    var numArr = numbers;
+    var termArr = terms;
 
+    if (lowNum > highNum){
+        console.log(" ERROR!: Numbers are not in proper order, Try Again!");
+    }
+
+    for (i=lowNum; i<(highNum+ 1); i++){
+        num = i;
+        if (num % numArr[0] == 0 && num % numArr[1] == 0 ){
+            console.log(i + termArr[0] + termArr [1]);
+        } else if (num % numArr[0] == 0 ){
+            console.log(i + termArr[0]);
+        } else if (num % numArr[1] == 0 ) {
+            console.log(i + termArr[1]);
+        }
+        else {
+            console.log(i);
+        }
+    }
+  
 }
 
 
+    
