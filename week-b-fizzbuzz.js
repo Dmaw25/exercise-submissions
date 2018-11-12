@@ -80,17 +80,21 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 */
 function fizzBuzz4(m,n,numbers,terms){
     var count = 0;
+    var string;
     if(m <= n && numbers.length === terms.length){
         for(i=m;i<=n;i++){
             count = 0;
+            string = "";
             for(j=0;j<numbers.length;j++){
                 if(i%numbers[j] === 0){
-                    console.log(terms[j]);
+                    string += terms[j];
                     count = 1;
                 }
         }
             if(count === 0){
                 console.log(i);
+            }else{
+                console.log(string);
             }
         }
     }else{
