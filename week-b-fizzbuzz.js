@@ -5,6 +5,9 @@
     Each multiple of 5 replaced with 'buzz'
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
+
+
+
 function fizzBuzz1(){
 
     for (i=1;i<101;i++)
@@ -103,94 +106,52 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Write a function which prints out the numbers m-n with substitutions of: 
     each element of the numbers array replaced by the element at the same index of the terms array.
     e.g., to mimic the behavior of fizzBuzz1, you would call the function like so:
-    fizzbuzz5(1,100,[3,5],['fizz','buzz'])
+    fizzBuzz4(1,100,[3,5],['fizz','buzz'])
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
-    if (m>n)
-    {
-        return("m is greater than n so this really doesn't work");
-    }
-    if(numbers.length != terms.length){
-        console.log("the length of 'numbers' and 'terms' isn't equal which may not necessarily be an issue")
-    }
-
-    for (i=m;i<(n+1);i++)
     {
 
-
-        if( i%(numbers[0])==0 && i%(numbers[1])==0)
+        if(m>n)
         {
-            console.log(terms[0],terms[1]);
+            return("m is greater than n so this really doesn't work")
         }
-        else if (i%(numbers[0])==0)
+        if(numbers.length!=terms.length)
         {
-            console.log(terms[0]);
+            return("your array of numbers and array of terms are not equal in length, this won't end well")
         }
-        else if (i%(numbers[1])==0)
-        {
-            console.log(terms[1]);
-        }
-        else
-        {
-            console.log(i);
-        } 
-    }
-}
-
-function fizzbuzz5(m,n,numbers,terms)
-{
-  /*  if (m>n)
-    {
-        return("m is greater than n so this really doesn't work");
-    }
-    if(numbers.length != terms.length){
-        console.log("the length of 'numbers' and 'terms' isn't equal which may not necessarily be an issue")
-    }
-
-    for (i=m;i<(n+1);i++)
-    {
-        let currentIndex =-1;
-
+        let Finalresult=[];
+        let NumberResult=true;
     
-        numbers.forEach(foreachloop);
-        function foreachloop(value)
+        for (currentNumber=m;currentNumber<(n+1);currentNumber++)
         {
-            currentIndex++;
-            if(i%value==0)
-            console.log(terms[currentIndex], i);
-            else
+            for(currentdivider=0;currentdivider<(numbers.length);currentdivider++)
             {
-                console.log(i);
+    
+                if(currentNumber%numbers[currentdivider]==0)
+                {
+                    Finalresult.push(terms[currentdivider]);
+                    NumberResult=false;
+                } 
             }
-        }
-    }*/
-    for (currentNumber=m;currentNumber<(n+1);currentNumber++)
-    {
-        let Finalresult= ["cat","dog","pie"];
-        console.log(Finalresult[0])
-        for(currentdivider=0;currentdivider<(numbers.length+1);currentdivider++)
-
-        {
-            if(currentNumber%numbers[currentdivider]==0)
-            {
-                console.log("hello it is I,"+terms[currentdivider]);
-                Finalresult[currentdivider]=terms[currentdivider];
+                if(NumberResult==true)
+                {
+                    console.log(currentNumber);
+                }
+                else
+                {
+                    console.log(Finalresult);
+                }
+                NumberResult=true;
+                Finalresult=[];
+    
+    
+            
             }
-
-
-        }
-        if(Finalresult=undefined)
-        {
-            console.log(currentNumber);
-        }
-        else 
-        {
-            console.log(Finalresult[1]);
-        }
+    
     }
-
 }
+
 
 
