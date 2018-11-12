@@ -87,8 +87,8 @@ function fizzBuzz4(m,n,numbers,terms){
         //variables as well as determining the number of other variables that there should be, but I'm not sure how to do 
         //that as of yet...
         //Therefore, this function will work iff the user enters a number and terms array of 3 numbers and 3 terms respectively.
-        let a = numbers.length;
-        let b = numbers.length - 1;
+        let a = 2;
+        let b = 1;
         let c = 0;
         if (m % numbers[a] == 0){
             console.log(terms[a]);
