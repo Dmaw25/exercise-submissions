@@ -79,7 +79,22 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz3(m,n,numbers,terms){
-    
+    var fb = 'fizzbuzz';
+    var f = 'fizz'
+    var b = 'buzz'
+    var m = ([i < 100] && [i++] && [i * 3]);
+    var n = ([i < 100] && [i++] && [i * 5]);
+    let numbers = ['1', '2', f, '4', b, f, '7', '8', f, b,
+    '11', f, '13', '14', fb, '16', '17', f, '19', b,
+    f, '22', '23', f, b, '26', f, '28', '29', fb,
+    '31', '32', f, '34', b, f, '37', '38', f, b,
+    '41', f, '43', '44', fb, '46', '47', f, '49', b,
+    f, '52', '53', f, b, '56', f, '58', '59', fb,
+    '61', '62', f, '64', b, f, '67', '68', f, b,
+    '71', f, '73', '74', fb, '76', '77', f, '79', b,
+    f, '82', '83', f, '84', b, f, '87', '88', fb,
+    '91', '92', f, '94', b, f, '97', '98', f, b];
+    (n += m);
 }
 
 
