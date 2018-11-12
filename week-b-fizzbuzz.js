@@ -6,9 +6,27 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
-    console.log('fizzbuzz1');
-
+    let arr = []; 
+    arr.length = 100;
+    let n = 1;
+    for(let i=0; i<99; i++){
+        let count = i;
+        arr[i] = count;
+        if(arr[i] % 15 == 0){
+            arr[i] = "fizzbuzz";
+        }
+        else if(arr[i] % 5 == 0){
+            arr[i] = "buzz";
+        }
+        else if(arr[i] % 3 == 0){
+            arr[i] = "fizz"
+        }
+        else{
+            arr[i] = n;
+        }
+        n++;
+    console.log(arr[i]);
+    }
 }
 
 /*
@@ -20,7 +38,29 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-
+    let arr = []; 
+    arr.length = 100;
+    let y = 1;
+    for(let i=m; i <= n; i++){
+        let count = i;
+        arr[i] = count;
+        if(arr[i] % 15 == 0){
+            count = "fizzbuzz";
+        }
+        else if(arr[i] % 5 == 0){
+            count = "buzz";
+        }
+        else if(arr[i] % 3 == 0){
+            count = "fizz"
+        }
+        else{
+            arr[i] = y;
+        }
+        y++;
+    if(m <= n){
+        console.log(count);
+    }
+}
 }
 
 /*
@@ -31,8 +71,30 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz3(m,n,fizzNum,buzzNum){
-
+function fizzBuzz4(m,n,fizzNum,buzzNum){
+    let arr = []; 
+    arr.length = n;
+    let y = 1;
+    for(let i=m; i <= n; i++){
+        let count = i;
+        arr[i] = count;
+        if(arr[i] % (fizzNum*buzzNum) == 0){
+            count = "fizzbuzz";
+        }
+        else if(arr[i] % buzzNum == 0){
+            count = "buzz";
+        }
+        else if(arr[i] % fizzNum == 0){
+            count = "fizz"
+        }
+        else{
+            arr[i] = y;
+        }
+        y++;
+    if(m <= n){
+        console.log(count);
+    }
+}
 }
 
 /*
@@ -44,8 +106,15 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz4(m,n,numbers,terms){
+function fizzBuzz3(m,n,numbers,terms){
+    let arr1 = []; let arr2 = []; let arr3 = [];
+    arr3.length = n;
 
+    for(let i = 0; i <= n; i++){
+        let count = i;
+        arr3[i] = count;
+        
+    }
 }
 
 
