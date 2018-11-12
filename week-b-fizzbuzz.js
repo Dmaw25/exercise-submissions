@@ -6,8 +6,18 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
-}
+    for (i = 1; i<=100; i++) {
+        if (i% 3 && i % 5 === 0 ) {
+            console.log("fizzbuzz");
+        } else if ( i % 3 === 0 ){
+            console.log("buzz");
+        } else if ( i % 5 === 0) {
+            console.log("fizz"); 
+        } else {
+            console.log(i)
+        }
+    }
+ }
 
 /*
     Variable-length FizzBuzz:
@@ -18,7 +28,17 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-
+    for (i = m; i<= n; i++) {
+        if (i% 3 && i % 5 === 0 ) {
+            console.log("fizzbuzz");
+        } else if ( i % 3 === 0 ){
+            console.log("buzz");
+        } else if ( i % 5 === 0) {
+            console.log("fizz"); 
+        } else {
+            console.log(i)
+        }
+    } 
 }
 
 /*
