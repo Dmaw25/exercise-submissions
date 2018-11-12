@@ -16,7 +16,9 @@ function fizzBuzz1(){
     console.log('41', f, '43', '44', fb, '46', '47', f, '49', b);
     console.log(f, '52', '53', f, b, '56', f, '58', '59', fb);
     console.log('61', '62', f, '64', b, f, '67', '68', f, b);
-    console.log
+    console.log('71', f, '73', '74', fb, '76', '77', f, '79', b);
+    console.log(f, '82', '83', f, '84', b, f, '87', '88', fb);
+    console.log('91', '92', f, '94', b, f, '97', '98', f, b);
 }
 
 /*
@@ -28,6 +30,21 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
+    var fb = 'fizzbuzz';
+    var f = 'fizz';
+    var b = 'buzz';
+    var m = [i > 0]; {
+        if ([i < 100]);
+        do ([i++]); 
+    }
+    var n = [i > 0]; {
+        if ([i < 100]);
+        do ([i++]); 
+    }
+    let fizzbuzz = ([1 * 5 >= 100] + [1 * 3 >= 100]);
+    let fizz = [1 * 3 >= 100];
+    let buzz = [1 * 5 >= 100];
+    console.log(FizzBuzz2(m,n));
 
 }
 
@@ -40,7 +57,16 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz4(m,n,fizzNum,buzzNum){
-
+    var fb = 'fizzbuzz';
+    var f = 'fizz';
+    var b = 'buzz'
+    let i = 0;
+    var m = ([i < 100] && [i++] && [i * 3]);
+    var n = ([i < 100] && [i++] && [i * 5]);
+    let fizzNum = [1 * 3 >= 100];
+    let buzzNum = [1 * 5 >= 100];
+    let fizzbuzz = (fizzNum || buzzNum);
+    console.log(FizzBuzz4(m,n));
 }
 
 /*
@@ -53,7 +79,7 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz3(m,n,numbers,terms){
-
+    
 }
 
 
