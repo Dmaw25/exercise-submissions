@@ -36,6 +36,9 @@ function fizzBuzz2(m,n){
     let num3 = "fizz";
     let num5 = "buzz";
     let num35 = "fizzbuzz";
+    if (m > n) {
+        console.log("'m' must be less than or equal to 'n,' you big silly goose!")
+    }
     for (let i = m; i <= n; i++){
         num = i;
         if (i % 3 === 0 && i % 5 === 0) {
@@ -59,6 +62,9 @@ function fizzBuzz2(m,n){
 */
 function fizzBuzz3(m,n,fizzNum,buzzNum){
     let num = 1;
+    if (m > n) {
+        console.log("'m' must be less than or equal to 'n,' you big silly goose!")
+    }
     for (let i = m; i <= n; i++){
         num = i;
         if (i % fizzNum === 0 && i % buzzNum === 0) {
@@ -83,12 +89,17 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 */
 function fizzBuzz4(m,n,numbers,terms){
     let num = 1;
-    /*let numbers = [x,y];
-    let terms = ["a","b","c"];*/
+    if (m > n) {
+        console.log("'m' must be less than or equal to 'n,' you big silly goose!")
+    }
+    if (numbers.length != terms.length) {
+        console.log("try making 'numbers' and 'terms' the same length!")
+        return num = "give it another shot!"
+    }
     for (let i = m; i <= n; i++){
         num = i;
         if (i % numbers[0] === 0 && i % numbers[1] === 0) {
-            num = terms[2];
+            num = terms[0]+terms[1];
         } else if (i % numbers[0] === 0) {
             num = terms[0];
         } else if (i % numbers[1] === 0) {
