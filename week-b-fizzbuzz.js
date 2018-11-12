@@ -34,13 +34,13 @@ function fizzBuzz1(){
 function fizzBuzz2(m,n){
         for (i = m; i <= n; i++) {
             if(i % 3 == 0 && i % 5 == 0) {
-                console.log(i + "fizzbuzz");
+                console.log("fizzbuzz");
             }
             else if (i % 3 == 0) {
-                console.log(i + "fizz");
+                console.log("fizz");
             }
             else if (i % 5 == 0) {
-                console.log(i + "buzz");
+                console.log("buzz");
             }
             else {
                 console.log(i);
