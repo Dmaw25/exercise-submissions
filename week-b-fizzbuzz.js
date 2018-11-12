@@ -95,6 +95,11 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
         console.log("Invalid input(s)");
         return;
     }
+    // Validation for zeros
+    else if (fizzNum * buzzNum === 0) {
+        console.log("Invalid input(s)");
+        return;
+    }
 
     // Convert floats to integers
     if (!Number.isInteger(m)) {
@@ -159,6 +164,11 @@ function fizzBuzz4(m,n,numbers,terms){
             console.log("Invalid input(s)");
             return;
         }
+        // Validation for zeros
+        if (numbers[i] === 0) {
+            console.log("Invalid input(s)");
+            return;
+        }
     }
 
     // Convert floats to integers
@@ -201,5 +211,5 @@ function fizzBuzz4(m,n,numbers,terms){
 // Test Cases
 //fizzBuzz1();
 //fizzBuzz2(-45.6, 46);
-//fizzBuzz3(-3.6, 50, 3, -8);
-//fizzBuzz4(-50.5, -10.7, [3, 5, 6, 8, 9, 10], ["a", "b", "c", "d", "e", "f"]);
+//fizzBuzz3(-3.6, 50, 3, 0);
+//fizzBuzz4(-50.5, -10.7, [2, 5, 6, 8, 9, 10], ["a", "b", "c", "d", "e", "f"]);
