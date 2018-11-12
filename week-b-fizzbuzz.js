@@ -6,6 +6,20 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
+    for (i = 1; i <= 100; i++) {
+        if(i % 3 == 0 && i % 5 == 0) {
+            console.log("fizzbuzz");
+        }
+        else if (i % 3 == 0) {
+            console.log("fizz");
+        }
+        else if (i % 5 == 0) {
+            console.log("buzz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 
 }
 
@@ -18,8 +32,22 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-
-}
+    function fizzBuzz2(m,n) {
+        for (i = m; i <= n; i++) {
+            if(i % 3 == 0 && i % 5 == 0) {
+                console.log(i + "fizzbuzz");
+            }
+            else if (i % 3 == 0) {
+                console.log(i + "fizz");
+            }
+            else if (i % 5 == 0) {
+                console.log(i + "buzz");
+            }
+            else {
+                console.log(i);
+            }
+        }
+    }
 
 /*
     Variable-length, varying-fizz/buzz number FizzBuzz:
@@ -30,8 +58,22 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz4(m,n,fizzNum,buzzNum){
-
-}
+    function fizzBuzz3(m,n,fizzNum,buzzNum){
+        for (i = m; i <= n; i++) {
+            if(i % fizzNum == 0 && i % buzzNum == 0) {
+                console.log('fizzbuzz');
+            }
+            else if (i % buzzNum == 0) {
+                console.log('buzz');
+            }
+            else if (i % fizzNum == 0) {
+                console.log('fizz');
+            }
+            else {
+                console.log(i);
+            }
+         }
+    }
 
 /*
     Variable-length FizzBuzz with arrays:
