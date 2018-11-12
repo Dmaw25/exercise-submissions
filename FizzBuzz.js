@@ -1,45 +1,43 @@
 function fizzBuzz1 (){
-    for(int i=1;i<=100;i++){
-        if((i%3 == 0) && (i%5==0))
-            output<<"FizzBuzz\n";
-        else if(i%3 == 0)
-            output<<"Fizz\n";
-        else if(i%5 == 0)
-            output<<"Buzz\n";
+    for(var i=1;i<=100;i++){
+        if(i%3 === 0 && i%5===0)
+            console.log("FizzBuzz");
+        else if(i%3 === 0)
+            console.log("Fizz");
+        else if(i%5 === 0)
+            console.log("Buzz");
         else
-            output<<i<<"\n";
+            console.log("i");
      }
-    return 0;
-}
+
 
 for(x)in range(1,101):print("Fizz"*(x%3==0)+(x%5==0)*"Buzz"or x)
 
 function fizzBuzz2(m,n){
-    for(i=10;i<=80;i++){
+    for(i=m;i<=n;i++){
         if((i%3 == 0) && (i%5==0))
-            output<<"fizzbuzz\n";
+            console.log("fizzbuzz");
         else if(i%3 == 0)
-            output<<"Fizz\n";
+            console.log("Fizz");
         else if(i%5 ==0)
-            output<<"Buzz\n";
+            console.log("Buzz");
     }
-    return 0;
+
+
+
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    for(i=m;i<=n;i++){
+        if(i%fizzNum === 0 && i%buzzNum === 0)
+            console.log("fizzbuzz");
+        else if(i%fizzNum === 0)
+            console.log("fizz");
+        else if(i%buzzNum ===0)
+            console.log("buzz");
+    }
 
 }
 
-function fizzBuzz4(m,n,fizzNum,buzzNum){
-    for(i=10;i<=80;i++){
-        if((i%fizzNum == 0) && (i%buzzNum))
-            output<<"fizzbuzz\n";
-        else if(i%fizzNum == 0)
-            output<<"fizz";
-        else if(i%buzzNum ==0)
-            output<<"buzz\n";
-    }
-
-}
-
-function fizzBuzz3(1,100,[3,5],['fizz','buzz']){
+function fizzBuzz4(1,100,[3,5],['fizz','buzz']){
 
 
 }
