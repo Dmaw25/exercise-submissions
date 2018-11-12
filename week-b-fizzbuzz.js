@@ -6,6 +6,17 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
+    for(i=1; i<101; i++) {
+        if (i % 3 == 0 && i % 5 == 0){
+            console.log('fizzbuzz');
+        } else if(i % 5 == 0){
+            console.log('buzz');
+        } else if(i % 3 == 0) {
+            console.log('fizz');
+        } else {
+            console.log(i);
+        }
+    }
 
 }
 
@@ -18,7 +29,22 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
+    let lowerNum = m;
+    let higherNum = n;
 
+    if (lowerNum >= higherNum){
+        console.log('error: invalid numbers')
+    }else for(i=lowerNum; i <= higherNum; i++){
+        if (i % 3 == 0 && i % 5 == 0 && i !== 0){
+            console.log('fizzbuzz');
+        } else if(i % 5 == 0 && i !== 0){
+            console.log('buzz');
+        } else if(i % 3 == 0 && i !== 0) {
+            console.log('fizz');
+        } else {
+            console.log(i);
+        }
+    }
 }
 
 /*
@@ -29,9 +55,28 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz4(m,n,fizzNum,buzzNum){
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    let lowerNum = m;
+    let higherNum = n;
+    let fizzy = fizzNum;
+    let buzzy = buzzNum;
 
+    if (lowerNum >= higherNum){
+        console.log('error: invalid numbers')
+    }else for(i=lowerNum; i <= higherNum; i++){
+        if (i % fizzy == 0 && i % buzzy == 0 && i !== 0){
+            console.log('fizzbuzz');
+        } else if(i % buzzy == 0 && i !== 0){
+            console.log('buzz');
+        } else if(i % fizzy == 0 && i !== 0) {
+            console.log('fizz');
+        } else {
+            console.log(i);
+        }
+    }
 }
+    
+    
 
 /*
     Variable-length FizzBuzz with arrays:
@@ -42,8 +87,23 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
+function fizzBuzz4(m,n,numbers,terms){
+    let lowerNum = m;
+    let higherNum = n;
 
+    if (lowerNum >= higherNum){
+        console.log('error: invalid numbers')
+    }else if(numbers.length !== terms.length){
+        console.log('error: arrays of different sizes')    
+    }else for(i=lowerNum; i <= higherNum; i++){
+        if (i % numbers[0] == 0 && i % numbers[1] == 0 && i !== 0){
+            console.log(terms[0] + terms[1]);
+        } else if (i % numbers[0] == 0 && i !== 0){
+            console.log(terms[0]);
+        } else if (i % numbers[1] == 0 && i !== 0){
+            console.log(terms[1]);
+        } else {
+            console.log(i);
+        } 
+    }
 }
-
-
