@@ -7,6 +7,8 @@
 */
 function fizzBuzz1(){
 
+    console.log('fizzbuzz1');
+
 }
 
 /*
