@@ -33,12 +33,12 @@ function fizzBuzz1(){
 function fizzBuzz2(m,n){
     
     for(var i=1;i<=100;i++){
-		if(i%5 === 0 && i%3 === 0){
+    if (m>n) m="is larger than n"; n="error";{
+        console.log('Fizz');
+        } else if(i%5 === 0 && i%3 === 0){
 			console.log('FizzBuzz');
-        }else if (m>n){m="is larger than n"; n="error";{
-        console.log('Fizz') }
-        }
-        for(var i=1;i<=100;i++){
+        
+        }for(var i=1;i<=100;i++){
             if(i%5 === 0 && i%3 === 0){
                 console.log('FizzBuzz');
             } else if(i%3 === 0){
