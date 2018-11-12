@@ -41,56 +41,30 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-    if (m%3 == 0 && m%5 == 0)
+    for(m;m<=n;m++)
     {
-        if (n%3 == 0 && n%5 == 0)
+        if (m%3 == 0 && m%5 ==0)
         {
-            n = 'fizzbuzz';
+            ans='fizzbuzz';
+            console.log(ans);
         }
-        else if (n%3 == 0)
+        else if (m%3 == 0)
         {
-            n = 'fizz';
+            ans='fizz';
+            console.log(ans);
         }
-        else if (n%5 == 0)
+
+        else if (m%5 == 0)
         {
-            n = 'buzz';
+            ans='buzz';
+            console.log(ans);
         }
-        m = 'fizzbuzz';
+        
+        else 
+        {
+            console.log(m);
+        }
     }
-    
-    else if (m%3 == 0)
-    {
-        if (n%3 == 0 && n%5 == 0)
-        {
-            n = 'fizzbuzz';
-        }
-        else if (n%3 == 0)
-        {
-            n = 'fizz';
-        }
-        else if (n%5 == 0)
-        {
-            n = 'buzz';
-        }
-        m = 'fizz';
-    }
-    else if (m%5 == 0)
-    {
-        if (n%3 == 0 && n%5 == 0)
-        {
-            n = 'fizzbuzz';
-        }
-        else if (n%3 == 0)
-        {
-            n = 'fizz';
-        }
-        else if (n%5 == 0)
-        {
-            n = 'buzz';
-        }
-        m = 'buzz';
-    }
-    console.log(m, n);
 }
 
 /*
@@ -102,56 +76,30 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz3(m,n,fizzNum,buzzNum){
-    if (m%fizzNum == 0 && m%buzzNum == 0)
+    for(m;m<=n;m++)
     {
-        if (n%fizzNum == 0 && n%buzzNum == 0)
+        if (m%fizzNum == 0 && m%buzzNum ==0)
         {
-            n = 'fizzbuzz';
+            ans='fizzbuzz';
+            console.log(ans);
         }
-        else if (n%fizzNum == 0)
+        else if (m%fizzNum == 0)
         {
-            n = 'fizz';
+            ans='fizz';
+            console.log(ans);
         }
-        else if (n%buzzNum == 0)
+
+        else if (m%buzzNum == 0)
         {
-            n = 'buzz';
+            ans='buzz';
+            console.log(ans);
         }
-        m = 'fizzbuzz';
+        
+        else 
+        {
+            console.log(m);
+        }
     }
-    
-    else if (m%fizzNum == 0)
-    {
-        if (n%fizzNum == 0 && n%buzzNum == 0)
-        {
-            n = 'fizzbuzz';
-        }
-        else if (n%fizzNum == 0)
-        {
-            n = 'fizz';
-        }
-        else if (n%buzzNum == 0)
-        {
-            n = 'buzz';
-        }
-        m = 'fizz';
-    }
-    else if (m%buzzNum == 0)
-    {
-        if (n%fizzNum == 0 && n%buzzNum == 0)
-        {
-            n = 'fizzbuzz';
-        }
-        else if (n%fizzNum == 0)
-        {
-            n = 'fizz';
-        }
-        else if (n%buzzNum == 0)
-        {
-            n = 'buzz';
-        }
-        m = 'buzz';
-    }
-    console.log(m, n);
 }
 
 /*
