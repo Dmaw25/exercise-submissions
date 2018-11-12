@@ -61,9 +61,9 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
         }else if  (i >= m && i<=n){
             if (i % fizzNum === 0 && i % buzzNum === 0){
                 console.log(" fizz ");
-            }else if (buzzNum % 5 ===0 ){
+            }else if (i % buzzNum ===0 ){
                 console.log(" buzz ");
-            }else if (fizzNum % 3 ===0){
+            }else if (i % fizzNum ===0){
                 console.log(" fizzbuzz ");
             }else{console.log(i)}
         }
