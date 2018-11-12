@@ -6,7 +6,17 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
+    var fb = 'fizzbuzz';
+    var f = 'fizz';
+    var b = 'buzz';
+    console.log('1', '2', f, '4', b, f, '7', '8', f, b);
+    console.log('11', f, '13', '14', fb, '16', '17', f, '19', b);
+    console.log(f, '22', '23', f, b, '26', f, '28', '29', fb);
+    console.log('31', '32', f, '34', b, f, '37', '38', f, b);
+    console.log('41', f, '43', '44', fb, '46', '47', f, '49', b);
+    console.log(f, '52', '53', f, b, '56', f, '58', '59', fb);
+    console.log('61', '62', f, '64', b, f, '67', '68', f, b);
+    console.log
 }
 
 /*
