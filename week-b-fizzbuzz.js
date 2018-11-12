@@ -6,23 +6,29 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-    let i=0;
-    while(i<100)
+    for(i=1;i<=100;i++)
     {
-        i++;
-        if (i%3==0 && i%5==0)
+        if (i%3 == 0 && i%5 ==0)
         {
-            i="fizzbuzz"
+            ans='fizzbuzz';
+            console.log(ans);
         }
-        else if (i%3==0)
+        else if (i%3 == 0)
         {
-            i="fizz";
+            ans='fizz';
+            console.log(ans);
         }
-        else if (i%5==0)
+
+        else if (i%5 == 0)
         {
-            i="buzz";
+            ans='buzz';
+            console.log(ans);
         }
-        console.log(i);
+        
+        else 
+        {
+            console.log(i);
+        }
     }
 }
 
@@ -35,19 +41,56 @@ function fizzBuzz1(){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz2(m,n){
-
-}
-
-/*
-    Variable-length, varying-fizz/buzz number FizzBuzz:
-    Write a function which prints out the numbers m-n, with the following substitutions:
-    Each multiple of fizzNum replaced with 'fizz'
-    Each multiple of buzzNum replaced with 'buzz'
-    Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
-    Validation that m <= n is a plus. 
-*/
-function fizzBuzz4(m,n,fizzNum,buzzNum){
-
+    if (m%3 == 0 && m%5 == 0)
+    {
+        if (n%3 == 0 && n%5 == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%3 == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%5 == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'fizzbuzz';
+    }
+    
+    else if (m%3 == 0)
+    {
+        if (n%3 == 0 && n%5 == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%3 == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%5 == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'fizz';
+    }
+    else if (m%5 == 0)
+    {
+        if (n%3 == 0 && n%5 == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%3 == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%5 == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'buzz';
+    }
+    console.log(m, n);
 }
 
 /*
@@ -60,6 +103,18 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz3(m,n,numbers,terms){
+    
+}
+
+/*
+    Variable-length, varying-fizz/buzz number FizzBuzz:
+    Write a function which prints out the numbers m-n, with the following substitutions:
+    Each multiple of fizzNum replaced with 'fizz'
+    Each multiple of buzzNum replaced with 'buzz'
+    Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
+    Validation that m <= n is a plus. 
+*/
+function fizzBuzz4(m,n,fizzNum,buzzNum){
 
 }
 
