@@ -5,10 +5,23 @@
     Each multiple of 5 replaced with 'buzz'
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
-function fizzBuzz1(){
-
+function fizzBuzz1() {
+    for (i = 1; i < 101; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        }
+        else if (i % 5 === 0) {
+            console.log("buzz");
+        }
+        else if (i % 3 === 0) {
+            console.log("fizz");
+        }
+        else {
+            console.log(i);
+        }
+    }
 }
-
+//fizzBuzz1();
 /*
     Variable-length FizzBuzz:
     Write a function which prints out the numbers m-n, with the following substitutions:
@@ -17,10 +30,29 @@ function fizzBuzz1(){
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz2(m,n){
-
+let M;
+let N;
+function fizzBuzz2(m, n) {
+    if (m <= n) {
+        for (m = m; m < n; m++) {
+            if (m % 3 === 0 && m % 5 === 0) {
+                console.log("fizzbuzz");
+            }
+            else if (m % 3 === 0) {
+                console.log("fizz");
+            }
+            else if (m % 5 === 0) {
+                console.log("buzz");
+            }
+            else {
+                console.log(m);
+            }
+        }
+    }
+    else {
+        console.log("First number is larger than second");
+    }
 }
-
 /*
     Variable-length, varying-fizz/buzz number FizzBuzz:
     Write a function which prints out the numbers m-n, with the following substitutions:
@@ -29,8 +61,28 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
+let Fizznum;
+let Buzznum;
 function fizzBuzz4(m,n,fizzNum,buzzNum){
-
+    if (m <= n) {
+        for (m = m; m < n + 1; m++) {
+            if (m % fizzNum === 0 && m % buzzNum === 0) {
+                console.log("fizzbuzz");
+            }
+            else if (m % fizzNum === 0) {
+                console.log("fizz");
+            }
+            else if (m % buzzNum === 0) {
+                console.log("buzz");
+            }
+            else {
+                console.log(m);
+            }
+        }
+    }
+    else {
+        console.log("First number is larger than second");
+    }
 }
 
 /*
@@ -42,8 +94,50 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
-
+let Numbers;
+let Terms;
+function extrafizzBuzz3(m,n,numbers,terms){
+    if (m <= n) {
+        if (numbers.length == terms.length) {
+            for (i = 0; i < numbers.length; i++) {
+                for (m = m; m < n + 1; m++) {
+                 
+                    if (m % numbers[i] === 0) {
+                        console.log(terms[i]);
+                    }
+                    else {
+                        console.log(m);
+                    }
+                }
+            }
+        }
+        else {
+            console.log("Numbers array length is shorter than terms array length");
+        }
+    }
+    else {
+        console.log("First number is larger than second");
+    }
 }
-
-
+function fizzbuzz3(m,n,numbers,terms){
+  if (m <= n) {
+    if (numbers.length == terms.length) {
+        for (m = m; m < n + 1; m++) {
+            for (i = 0; i < numbers.length; i++) {
+                if (m % numbers[i] === 0) {
+                    console.log(terms[i]);
+                }
+                else {
+                    console.log(m);
+                }
+            }
+        }
+    }
+    else {
+        console.log("Numbers array length is shorter than terms array length");
+    }
+}
+else {
+    console.log("First number is larger than second");
+}
+}
