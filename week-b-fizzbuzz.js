@@ -37,7 +37,7 @@ function fizzBuzz2(m,n){
 
     if (lowNum > highNum){
         console.log(" ERROR!: Numbers are not in proper order, Try Again!");
-    }
+    } else { 
 
     for (i=lowNum; i<(highNum+ 1); i++){
         num = i;
@@ -52,6 +52,7 @@ function fizzBuzz2(m,n){
             console.log(i);
         }
     }
+}
 }
 
 /*
@@ -70,8 +71,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 
     if (lowNum > highNum){
         console.log(" ERROR!: Numbers are not in proper order, Try Again!");
-    }
-
+    } else {
     for (i=lowNum; i<(highNum+ 1); i++){
         num = i;
         if (num % fNum == 0 && num % bNum == 0 && num != 0){
@@ -84,6 +84,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
         else {
             console.log(i);
         }
+    }
     }
 }
 
@@ -103,25 +104,35 @@ function fizzBuzz4(m,n,numbers,terms){
     var numArr = numbers;
     var termArr = terms;
 
-    if (lowNum > highNum){
-        console.log(" ERROR!: Numbers are not in proper order, Try Again!");
-    }
+    x = numArr.length;
 
-    for (i=lowNum; i<(highNum+ 1); i++){
-        num = i;
-        if (num % numArr[0] == 0 && num % numArr[1] == 0 ){
-            console.log(i + termArr[0] + termArr [1]);
-        } else if (num % numArr[0] == 0 ){
-            console.log(i + termArr[0]);
-        } else if (num % numArr[1] == 0 ) {
-            console.log(i + termArr[1]);
-        }
-        else {
-            console.log(i);
-        }
+    if (lowNum > highNum){
+    
+        console.log(" ERROR!: Numbers are not in proper order, Try Again!");
+    
+    }   else if (numArr.length != termArr.length){   
+    
+            console.log("Array Lengths are not the proper size! Try Again!");
+    
+    }   else {
+
+            for (i=lowNum; i<(highNum+ 1); i++){
+                
+                num = i;
+                
+                console.log(i);
+                
+                for ( y = 0 ; y < (numArr.length +1) ; y ++){
+                    
+                    if (num % numArr[y] == 0 && num != 0){
+                        console.log(termArr[y]);
+                    }
+                } 
+
+            }
+    
     }
   
 }
 
 
-    
