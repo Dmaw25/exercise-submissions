@@ -6,7 +6,7 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
+	console.log('hello world');
 }
 
 /*
