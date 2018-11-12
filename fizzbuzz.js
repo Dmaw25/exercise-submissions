@@ -82,9 +82,24 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
+
+
 function fizzBuzz4(m,n,numbers,terms){
     var numbers = numbers
     var terms = terms;
+    termString = " "
+    function modCheck(x) {
+        for (i = 0; i < numbers.length; i++){
+            if (x % numbers[i] == 0) {
+                termString += terms[i];
+            }
+        }
+        
+    }
+    for (i = 0; i < numbers.length; i++) {
+        numbers[i] = terms[i];
+        word = terms[i];
+    }
 
     for (i = m; i <= n; i++) {
         if (i % numbers[0] == 0 && i % numbers[1] == 0) {
