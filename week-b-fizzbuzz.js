@@ -7,12 +7,18 @@
 */
 function fizzBuzz1(){
     for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0) {
+        
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        }
+        
+        else if (i % 3 === 0) {
             console.log("fizz");
         }
         else if (i % 5 === 0){
             console.log("buzz");
         }
+
         else {
             console.log(i);
         }
@@ -30,7 +36,10 @@ function fizzBuzz1(){
 function fizzBuzz2(m,n){
     if (m <= n){
         for (; m <= n; m++) {
-            if (m % 3 === 0) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                console.log("fizzbuzz");
+            } 
+            else if (m % 3 === 0) {
                 console.log("fizz");
             }
             else if (m % 5 === 0){
