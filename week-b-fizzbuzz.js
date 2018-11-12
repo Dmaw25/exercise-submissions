@@ -5,7 +5,20 @@
     Each multiple of 5 replaced with 'buzz'
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
-function fizzBuzz1(){
+function fizzBuzz1(){   
+    for (i = 1; i<=100; i++) {
+    if (i % 15 === 0 ) {
+        console.log("fizzbuzz");
+    } else if ( i % 3 === 0 ){
+        console.log("buzz");
+    } else if ( i % 5 === 0) {
+        console.log("fizz");
+    } else {
+        console.log(i)
+    }
+}
+}
+        	
 
 }
 
@@ -45,5 +58,4 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
 function fizzBuzz3(m,n,numbers,terms){
 
 }
-
 
