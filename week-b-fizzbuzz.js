@@ -94,6 +94,67 @@ function fizzBuzz2(m,n){
 }
 
 /*
+    Variable-length, varying-fizz/buzz number FizzBuzz:
+    Write a function which prints out the numbers m-n, with the following substitutions:
+    Each multiple of fizzNum replaced with 'fizz'
+    Each multiple of buzzNum replaced with 'buzz'
+    Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
+    Validation that m <= n is a plus. 
+*/
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    if (m%fizzNum == 0 && m%buzzNum == 0)
+    {
+        if (n%fizzNum == 0 && n%buzzNum == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%fizzNum == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%buzzNum == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'fizzbuzz';
+    }
+    
+    else if (m%fizzNum == 0)
+    {
+        if (n%fizzNum == 0 && n%buzzNum == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%fizzNum == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%buzzNum == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'fizz';
+    }
+    else if (m%buzzNum == 0)
+    {
+        if (n%fizzNum == 0 && n%buzzNum == 0)
+        {
+            n = 'fizzbuzz';
+        }
+        else if (n%fizzNum == 0)
+        {
+            n = 'fizz';
+        }
+        else if (n%buzzNum == 0)
+        {
+            n = 'buzz';
+        }
+        m = 'buzz';
+    }
+    console.log(m, n);
+}
+
+/*
     Variable-length FizzBuzz with arrays:
     Write a function which prints out the numbers m-n with substitutions of: 
     each element of the numbers array replaced by the element at the same index of the terms array.
@@ -102,19 +163,7 @@ function fizzBuzz2(m,n){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
-    
-}
-
-/*
-    Variable-length, varying-fizz/buzz number FizzBuzz:
-    Write a function which prints out the numbers m-n, with the following substitutions:
-    Each multiple of fizzNum replaced with 'fizz'
-    Each multiple of buzzNum replaced with 'buzz'
-    Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
-    Validation that m <= n is a plus. 
-*/
-function fizzBuzz4(m,n,fizzNum,buzzNum){
+function fizzBuzz4(m,n,numbers,terms){
 
 }
 
