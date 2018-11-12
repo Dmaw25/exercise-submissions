@@ -55,8 +55,19 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz4(m,n,fizzNum,buzzNum){
-
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    for (i = m; i <= n; i++) {
+        if ((i % fizzNum == 0) && (i % buzzNum == 0)) {
+            console.log(“FizzBuzz”);
+        } else if (i % 3 == 0) {
+            console.log(“Fizz”);
+        } else if (i % 5 == 0) {
+            console.log(“Buzz”);
+        } else {
+            console.log(i);
+        }
+    };
+ }
 }
 
 /*
