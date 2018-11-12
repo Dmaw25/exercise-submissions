@@ -29,7 +29,7 @@ function fizzBuzz1(){
 */
 function fizzBuzz2(m,n){
     for(var m=3; m<=5;i++){
-        if(i%m)
+        if(i%m ===3 && 
     }
 
 
