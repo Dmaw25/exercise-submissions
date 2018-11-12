@@ -7,7 +7,8 @@
 */
 function fizzBuzz1(){
 
-}
+} 
+//Hi 
 
 /*
     Variable-length FizzBuzz:
