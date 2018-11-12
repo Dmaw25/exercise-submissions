@@ -6,7 +6,24 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
-
+    let i=0;
+    while(i<100)
+    {
+        i++;
+        if (i%3==0 && i%5==0)
+        {
+            i="fizzbuzz"
+        }
+        else if (i%3==0)
+        {
+            i="fizz";
+        }
+        else if (i%5==0)
+        {
+            i="buzz";
+        }
+        console.log(i);
+    }
 }
 
 /*
