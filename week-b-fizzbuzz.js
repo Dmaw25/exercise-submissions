@@ -46,8 +46,29 @@ function fizzBuzz2(m,n){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-function fizzBuzz4(m,n,fizzNum,buzzNum){
-
+f
+function fizzBuzz4(m,n,numbers,terms){
+   var count = 0;
+   var string;
+   if(m <= n && numbers.length === terms.length) {
+       for(i=m; i<=n;i++){
+           count = 0;
+           string = "";
+           for(j=0; j<numbers.length;j++){
+               if(i%numbers[j] === 0){
+                   string += terms[j];
+                   count = 1;
+               }
+           }
+           if(count === 0){
+               console.log(i);
+           }else {
+               console.log(string);
+           }
+       }
+       }else{
+           console.log("No bueno");
+       }
 }
 
 /*
@@ -59,8 +80,13 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
 
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+    for (var i=m; i <= n; i++) {
+        if ((i % fizzNum == 0) && (i % buzzNum == 0)) {console.log('fizzbuzz')
+    }   else if (i % buzzNum == 0) {console.log('buzz')
+    }    else if (i % fizzNum == 0 ){ console.log('fizz')
+  }  else console.log(i)
 }
-
-
+}
+    
