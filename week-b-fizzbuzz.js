@@ -31,9 +31,9 @@ function fizzBuzz1() {
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
     Validation that m <= n is a plus. 
 */
-let M;
-let N;
 function fizzBuzz2(m, n) {
+    m = document.getElementById("fizzbuzz2m");
+    n = document.getElementById("fizzbuzz2n");
     if (m <= n) {
         for (m = m; m < n; m++) {
             if (m % 3 === 0 && m % 5 === 0) {
@@ -65,7 +65,11 @@ function fizzBuzz2(m, n) {
 
 let Fizznum;
 let Buzznum;
-    function fizzBuzz4(m, n, fizzNum, buzzNum) {
+function fizzBuzz4(m, n, fizzNum, buzzNum) {
+    m = document.getElementById("fizzbuzz4m");
+    n = document.getElementsById("fizzbuzz4n");
+    fizzNum = document.getElementsByClassName("fizznum");
+    buzzNum = document.getElementsByClassName("buzznum");
         if (m <= n) {
             for (m = m; m < n + 1; m++) {
                 if (m % fizzNum === 0 && m % buzzNum === 0) {
@@ -101,7 +105,8 @@ let Buzznum;
 
 let Numbers;
 let Terms;
-    function extrafizzBuzz3(m, n, numbers, terms) {
+function extrafizzBuzz3(m, n, numbers, terms) {
+    
         if (m <= n) {
             if (numbers.length == terms.length) {
                 for (i = 0; i < numbers.length; i++) {
@@ -125,7 +130,11 @@ let Terms;
         }
     }
 
-function fizzbuzz3(m,n,numbers,terms){
+function fizzbuzz3(m, n, numbers, terms) {
+    m = document.getElementById("fizzbuzz3m");
+    n = document.getElementsById("fizzbuzz3n");
+    numbers = document.getElementsById("fizzbuzznum");
+    terms = document.getElementsById("fizzbuzznumterms");
   if (m <= n) {
     if (numbers.length == terms.length) {
         for (m = m; m < n + 1; m++) {
