@@ -14,7 +14,7 @@ public class WeekCChallenge extends Calculator{
 		double additionResult = add(1.09,2.13);
 		double subtractionResult = subtract(5.98,3.42);
 		double multiplicationResult = multiply(4.01,3.75);
-		double divisionResult = divide(12.0,6.01);
+		double divisionResult = divide(12.0,0);
 
 		//3. print the value of each of these variables to the console with a descriptive message
 		System.out.println("The result of your addition is "+additionResult);

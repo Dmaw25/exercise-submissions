@@ -13,7 +13,7 @@ public class Calculator {
 	}
 
 	public static double divide(double arg0, double arg1) {
-		if (arg1 == 0){return Double.MAX_VALUE;}
+		if (arg1 == 0){return Double.POSITIVE_INFINITY;}
 		return arg0 / arg1;
 	}
 }
