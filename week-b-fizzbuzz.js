@@ -6,6 +6,7 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 
+
 function fizzBuzz1() {
     for (i = 1; i < 101; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -63,6 +64,7 @@ function fizzBuzz2(m, n) {
     Validation that m <= n is a plus. 
 */
 
+
 let Fizznum;
 let Buzznum;
 function fizzBuzz4(m, n, fizzNum, buzzNum) {
@@ -102,6 +104,7 @@ function fizzBuzz4(m, n, fizzNum, buzzNum) {
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
+
 
 let Numbers;
 let Terms;
