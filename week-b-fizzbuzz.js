@@ -85,25 +85,25 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     e.g., to mimic the behavior of fizzBuzz1, you would call the function like so:
     fizzBuzz4(1,100,[3,5],['fizz','buzz'])
     Validation the m <= n is a plus. 
-    The arrays may have any length, but validation that their length is the SAME is a plus. 
+    The arrays may have any length, bu t validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
-    let lowerNum = m;
-    let higherNum = n;
-
-    if (lowerNum >= higherNum){
-        console.log('error: invalid numbers')
-    }else if(numbers.length !== terms.length){
-        console.log('error: arrays of different sizes')    
-    }else for(i=lowerNum; i <= higherNum; i++){
-        if (i % numbers[0] == 0 && i % numbers[1] == 0 && i !== 0){
-            console.log(terms[0] + terms[1]);
-        } else if (i % numbers[0] == 0 && i !== 0){
-            console.log(terms[0]);
-        } else if (i % numbers[1] == 0 && i !== 0){
-            console.log(terms[1]);
-        } else {
-            console.log(i);
-        } 
+    if (isNaN(Number(m)) || isNaN(Number(n)) || m > n){
+        console.log('invalid input');
+        return;
     }
+    let output = "";
+    for(i = m; i < n; ++i){
+        for(let j in numbers){
+            if(i % numbers[j] === 0){
+                output += terms[j];
+            }
+        }
+    }
+    if (output){
+        console.log(output);
+    } else {
+        console.log(i);
+    }
+    output = "";
 }
