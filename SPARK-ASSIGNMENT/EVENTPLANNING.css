@@ -1,0 +1,137 @@
+body {
+    color: white;
+    text-align: center
+}
+
+p {
+    color: white;
+    text-align: center;
+    background-color: rgb(241, 33, 189);
+}
+
+header {
+    font-size: 25px;
+    background-color: rgb(241, 33, 189);
+    padding: 10px;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+    border-style: double dotted;
+}
+
+header>h1 {
+    font-size: 35px;
+    background-color: rgb(241, 33, 189);
+    border-style: double inset;
+    border-width: 10px 5px 10px 5px;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.topnav {
+    background-color: rgb(241, 33, 189);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 6px;
+}
+
+.topnav a:hover {
+    background-color: rgb(241, 151, 219);
+    color: black;  
+}
+
+.topnav .login-container {
+    float: right;
+    margin: 4px 4px;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 10px;
+    border: none;
+    width: 100px;
+  }
+
+.topnav .login-container button {
+    float: right;
+    padding: 3px;
+    margin-right: 10px;
+    background: #ddd;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+article {
+    background-color: rgb(241, 33, 189);
+    text-decoration: none;
+    color: white;
+    text-align:center;
+    border-style: double dotted;
+    max-width: 350px;
+    margin: auto;
+}
+
+article a {
+    text-decoration: none;
+    color: white;
+}
+
+div {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.centered {
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.centered 2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+button {
+    padding: 2px 2px;
+    border: none;
+    width: 100px;
+    opacity: 0.9;
+    float: center;
+}
+
+h3 {
+    color: white;
+}
+
+h4 {
+    max-width: 350px;
+    margin: auto;
+}
+
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 6px;
+    font-size: 20px;
+}
+
