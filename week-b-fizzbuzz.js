@@ -97,20 +97,40 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz3(m,n,numbers,terms){
-for (i=m; i<n; i++) {
-    if (i % numbers[0] === 0 && i % numbers[1] !== 0 && i % numbers[2] !== 0) {
-        console.log(terms[0]);
-    }
-    else if (i % numbers[1] === 0  && i % numbers[0] !== 0 && i % numbers[2] !== 0) {
-        console.log(terms[1]);
-    }
-    else if (i % numbers[2] === 0  && i % numbers[1] !== 0 && i % numbers[0] !== 0) {
-        console.log(terms[2]);
-    }    
-    else if (i % numbers[1] === 0  && i % numbers[0] === 0 && i % numbers[2] !== 0) {
-        console.log(terms[0] + terms[1]);
-    }
-    else {console.log(i)}
+if (isNaN(Number(m)) || isNaN(Number(n)) || m > n) {
+    console.log('invalid input')
+    return;
 }
 
+let output = "";
+for (i = m; i <= n; i++) {
+    for (let j in numbers) {
+        if ( i % numbers[j] === 0) {
+            output += terms[j];
+        }
+    }
+    if (output) {
+        console.log(output);}
+    else {console.log(i);}
+    output = "";
+    }
 }
+
+
+// for (i=m; i<n; i++) {
+//     if (i % numbers[0] === 0 && i % numbers[1] !== 0 && i % numbers[2] !== 0) {
+//         console.log(terms[0]);
+//     }
+//     else if (i % numbers[1] === 0  && i % numbers[0] !== 0 && i % numbers[2] !== 0) {
+//         console.log(terms[1]);
+//     }
+//     else if (i % numbers[2] === 0  && i % numbers[1] !== 0 && i % numbers[0] !== 0) {
+//         console.log(terms[2]);
+//     }    
+//     else if (i % numbers[1] === 0  && i % numbers[0] === 0 && i % numbers[2] !== 0) {
+//         console.log(terms[0] + terms[1]);
+//     }
+//     else {console.log(i)}
+// }
+
+// }
