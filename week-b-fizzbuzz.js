@@ -73,7 +73,7 @@ function fizzBuzz2(x,y){
     Each multiple of fizzNum replaced with 'fizz'
     Each multiple of buzzNum replaced with 'buzz'
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
-    Validation that m <= n is a plus. 
+     Validation that m <= n is a plus. 
 */
 function fizzBuzz3(x,y,fizzNum,buzzNum){
     if (x==y){
@@ -143,3 +143,27 @@ function fizzBuzz4(x,y,numbers,terms){
 }
 
 
+
+
+
+
+function fizzBuzz4(m,n,numbers,terms){
+    var word;
+    if(m<=n && numbers.length==terms.length){
+        for(m;m<=n;m++){
+            word="";
+            for(k=0;k<numbers.length;k++){
+                if(m%numbers[k]==0){
+                    word+=terms[k];
+                }
+            }
+            if(word==""){
+                console.log(m);
+            }
+            else{
+                console.log(word);
+            }
+        }
+    }
+    else {console.log("Punk");}
+}
