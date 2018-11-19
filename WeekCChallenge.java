@@ -10,8 +10,11 @@ public class WeekCChallenge extends Calculator {
 		// with arguments of your choice, assigning the result to the variables below
 		
 		double additionResult;
+		
 		double subtractionResult;
+		
 		double multiplicationResult;
+		
 		double divisionResult;
 
 		//3. print the value of each of these variables to the console with a descriptive message
@@ -24,24 +27,48 @@ public class WeekCChallenge extends Calculator {
 	
 
 	public static void fizzBuzz(int m, int n, int[] numbers, String[] terms){
+		
+		//static int m;
+		
+		//static int n;
+		
+		//static numbers;
+		
+		//static terms;
+		
+		
 //function fizzBuzz4(m,n,numbers,terms){
+	
 //if (m > n || numbers.length > terms.length || terms.length > numbers.length) {
-//    console.log ("Error!");
+	
+//    System.out.println("Error!");
 //}
 
 //else {
 //    for (i = m; i <= n; i++) {
+	
 //        termString = " ";
+
 //        for (y = 0; y < numbers.length; y++) {
+	
 //            if (i % numbers[y] === 0) {
+	
 //                termString = termString + terms[y];
+
 //            }
+
 //        }
+
 //        if (termString != " ") {
-//            console.log(termString);
+	
+//            System.out(termString);
+
 //        }
+
 //        else {
-//            console.log(i);
+	
+//            System.out(i);
+
 //        }
 //        
 //    }
