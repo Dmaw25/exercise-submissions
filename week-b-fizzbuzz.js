@@ -6,6 +6,7 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
+<<<<<<< HEAD
     let num = 1;
     let num3 = "fizz";
     let num5 = "buzz";
@@ -21,6 +22,11 @@ function fizzBuzz1(){
         }
         console.log(num)
     }
+=======
+
+    console.log('fizzbuzz1');
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 /*
@@ -61,6 +67,7 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz3(m,n,fizzNum,buzzNum){
+<<<<<<< HEAD
     let num = 1;
     if (m > n) {
         console.log("'m' must be less than or equal to 'n,' you big silly goose!")
@@ -76,6 +83,9 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
         }
         console.log(num)
     }
+=======
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 /*
@@ -88,6 +98,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
+<<<<<<< HEAD
     let num = 1;
     if (m > n) {
         console.log("'m' must be less than or equal to 'n,' you big silly goose!")
@@ -107,6 +118,9 @@ function fizzBuzz4(m,n,numbers,terms){
         }
         console.log(num)
     }
+=======
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 
