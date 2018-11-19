@@ -1,7 +1,7 @@
-public class WeekCChallenge extends Calculator1{
+public class WeekCChallenge extends Calculator{
 
 	public static void main(String[] args){
-		Calculator1 c = new Calculator1();
+		Calculator c = new Calculator();
 		//With how I have it written I don't think I need to do this.
 		//I changed plenty with how these were set up.
 		//I even renamed the Calculator to Calculator1 because I had my own Calculator.
