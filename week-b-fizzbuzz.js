@@ -72,8 +72,82 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz4(m,n,numbers,terms){
-   
-}
 
+
+/*function fizzBuzz4(m,n,numbers,terms){
+   
+} 
+*/
+/*
+function super_fizzbuzz(array){
+    var super_array = [];
+
+    for (var i=0; i<=array.length-1; i++)
+    {
+        if (array[i] % 15 == 0)
+            super_array.push("FizzBuzz");
+        else if (array[i] % 5 == 0)
+            super_array.push("Buzz");
+        else if (array[i] % 3 == 0)
+            super_array.push("Fizz");
+        else
+            super_array.push(array[i]);
+    }
+    return super_array;
+    }
+
+    console.log(super_fizzbuzz());
+*/
+
+/*
+Variable-length FizzBuzz with arrays:
+Write a function which prints out the numbers m-n with substitutions of: 
+each element of the numbers array replaced by the element at the same index of the terms array.
+e.g., to mimic the behavior of fizzBuzz1, you would call the function like so:
+fizzBuzz4(1,100,[3,5],['fizz','buzz'])
+Validation the m <= n is a plus. 
+The arrays may have any length, but validation that their length is the SAME is a plus. 
+*/
+function fizzBuzz4(m,n,numbers,terms){
+{
+
+    if(m>n)
+    {
+        return("m is greater than n so this really doesn't work")
+    }
+    if(numbers.length!=terms.length)
+    {
+        return("your array of numbers and array of terms are not equal in length, this won't end well")
+    }
+    let Finalresult=[];
+    let NumberResult=true;
+
+    for (currentNumber=m;currentNumber<(n+1);currentNumber++)
+    {
+        for(currentdivider=0;currentdivider<(numbers.length);currentdivider++)
+        {
+
+            if(currentNumber%numbers[currentdivider]==0)
+            {
+                Finalresult.push(terms[currentdivider]);
+                NumberResult=false;
+            } 
+        }
+            if(NumberResult==true)
+            {
+                console.log(currentNumber);
+            }
+            else
+            {
+                console.log(Finalresult);
+            }
+            NumberResult=true;
+            Finalresult=[];
+
+
+        
+        }
+
+}
+}
 
