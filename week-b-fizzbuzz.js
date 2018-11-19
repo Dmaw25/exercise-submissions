@@ -112,6 +112,30 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
+    var word;
+    if (m<=n && numbers.length == terms.length)
+    {
+        for (m;m<=n; m++)
+        {
+            word = '';
+            for (k=0;k<numbers.length;k++)
+            {
+                if (m%numbers[k] == 0)
+                {
+                    word += terms[k];
+                }
+            }
+            if (word == '')
+            {
+                console.log(m);
+            }
+            else 
+            {
+                console.log(word);
+            }
+        }
+    }
+    /*
     for(m;m<=n;m++)
     {
         if (m%numbers[0] == 0 && m%numbers[1] == 0)
@@ -134,8 +158,7 @@ function fizzBuzz4(m,n,numbers,terms){
         {
             console.log(m);
         }
-    }
-
+    }*/
 }
 
 
