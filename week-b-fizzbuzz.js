@@ -82,7 +82,9 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 */
 
 function fizzBuzz4(m,n,numbers,terms){
-    while (m <= n){
+    var count = 0;
+    var string = "";
+    while (m <= n && numbers.length == terms.length){
         //As far as this part goes, I know that I should make some kind of a loop to take care of the values for the other
         //variables as well as determining the number of other variables that there should be, but I'm not sure how to do 
         //that as of yet...
@@ -90,6 +92,8 @@ function fizzBuzz4(m,n,numbers,terms){
         let a = 2;
         let b = 1;
         let c = 0;
+        count = 0;
+        string = "";
         if (m % numbers[a] == 0){
             console.log(terms[a]);
             m++;
