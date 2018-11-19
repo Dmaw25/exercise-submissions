@@ -1,18 +1,22 @@
 public class Calculator {
 
 	public double add(double arg0, double arg1) {
-		return 0.0;
+		double add= arg0+arg1;
+		return add;
 	}
 
 	public double subtract(double arg0, double arg1) {
-		return 0.0;
+		double sub= arg0-arg1;
+		return sub;
 	}
 
 	public double multiply(double arg0, double arg1) {
-		return 0.0;
+		double mult= arg0*arg1;
+		return mult;
 	}
 
 	public double divide(double arg0, double arg1) {
-		return 0.0;
+		double div= arg0/arg1;
+		return div;
 	}
 }
