@@ -6,6 +6,7 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
+<<<<<<< HEAD
     for (let i=1;i<101;++i){
         if(i%3==0 && i%5==0){
             console.log("fizzbuzz");
@@ -20,6 +21,11 @@ function fizzBuzz1(){
             console.log(i);
         }
     }
+=======
+
+    console.log('fizzbuzz1');
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 /*
     Variable-length FizzBuzz:
@@ -75,6 +81,7 @@ function fizzBuzz2(x,y){
     Each multiple of both fizzNum and BuzzNum replaced with 'fizzbuzz'
      Validation that m <= n is a plus. 
 */
+<<<<<<< HEAD
 function fizzBuzz3(x,y,fizzNum,buzzNum){
     if (x==y){
         return "What are you doing? These are equal, punk.";
@@ -102,6 +109,10 @@ function fizzBuzz3(x,y,fizzNum,buzzNum){
             }
         }
     }
+=======
+function fizzBuzz3(m,n,fizzNum,buzzNum){
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 /*
@@ -113,6 +124,7 @@ function fizzBuzz3(x,y,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
+<<<<<<< HEAD
 function fizzBuzz4(x,y,numbers,terms){
     if (x==y){
         return "What are you doing? These are equal, punk.";
@@ -140,6 +152,10 @@ function fizzBuzz4(x,y,numbers,terms){
             }
         }
     }
+=======
+function fizzBuzz4(m,n,numbers,terms){
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 
