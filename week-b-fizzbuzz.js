@@ -6,6 +6,7 @@
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
 function fizzBuzz1(){
+<<<<<<< HEAD
     for (i = 1; i<=100; i++) {
         if (i % 15 === 0 ) {
             console.log("fizzbuzz");
@@ -18,6 +19,12 @@ function fizzBuzz1(){
         }
     }
  }
+=======
+
+    console.log('fizzbuzz1');
+
+}
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 
 /*
     Variable-length FizzBuzz:
@@ -50,6 +57,7 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz3(m,n,fizzNum,buzzNum){
+<<<<<<< HEAD
     if (m <=n ){
         for (i=m; i <= n; i++) {
             if (i % m === 0 && i % n === 0 ) {
@@ -61,6 +69,9 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
             }
         }
  }else {console.log("Not Valid entry")}
+=======
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 /*
@@ -73,6 +84,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
+<<<<<<< HEAD
     let buzzArray = [''];
     if (m <=n && numbers.length === terms.length){
         for (i=m; i <= n; i++) {
@@ -85,6 +97,9 @@ function fizzBuzz4(m,n,numbers,terms){
             }
         }
  }else {console.log("Not Valid entry")}
+=======
+
+>>>>>>> 4f29cf41df67670672b472b39d3e7a991ba347fd
 }
 
 
