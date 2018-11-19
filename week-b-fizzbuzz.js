@@ -106,14 +106,25 @@ function fizzBuzz4(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz3(m,n,numbers,terms){
-    let arr1 = []; let arr2 = []; let arr3 = [];
-    arr3.length = n;
-
-    for(let i = 0; i <= n; i++){
-        let count = i;
-        arr3[i] = count;
-        
+function fizzBuzz3(m,n,numbers,terms){    
+    if(isNaN(Number(m)) || isNaN(Number(n)) || m > n){
+        console.log("Invalid Input");
+        return;
+    }
+    let output = "";
+    for( i = m; i <= n; ++i){
+        for( let j in numbers){
+            if(i % numbers[j] === 0){
+                output += terms[j];
+            }
+        }
+        if(output){
+            console.log(output);
+        }
+        else{
+            console.log(i);
+        }
+    output = "";
     }
 }
 
