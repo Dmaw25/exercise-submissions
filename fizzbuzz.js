@@ -5,6 +5,7 @@
     Each multiple of 5 replaced with 'buzz'
     Each multiple of both 3 and 5 replaced with 'fizzbuzz'
 */
+
 function fizzBuzz1(){
     for (i = 1; i <= 100; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
@@ -55,8 +56,6 @@ function fizzBuzz2(m,n){
     Validation that m <= n is a plus. 
 */
 function fizzBuzz3(m,n,fizzNum,buzzNum){
-    var fizzNum = fizzNum;
-    var buzzNum = buzzNum;
 
     for (i = m; i <= n; i++) {
         if (i % fizzNum == 0 && i % buzzNum == 0) {
@@ -85,33 +84,28 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 
 
 function fizzBuzz4(m,n,numbers,terms){
-    var numbers = numbers
-    var terms = terms;
-    termString = " "
-    function modCheck(x) {
-        for (i = 0; i < numbers.length; i++){
-            if (x % numbers[i] == 0) {
-                termString += terms[i];
-            }
-        }
-        
-    }
-    for (i = 0; i < numbers.length; i++) {
-        numbers[i] = terms[i];
-        word = terms[i];
+    // 
+    if (m > n || numbers.length > terms.length || terms.length > numbers.length) {
+        console.log ("Error!");
     }
 
-    for (i = m; i <= n; i++) {
-        if (i % numbers[0] == 0 && i % numbers[1] == 0) {
-            console.log(terms[0]+terms[1]);
-        } 
-        else if (i % numbers[0] == 0) {
-            console.log(terms[0]);
-        }
-        else if (i % numbers[1] == 0)
-        console.log(terms[1]);
-        else {
-            console.log(i);
+    else {
+        for (i = m; i <= n; i++) {
+            termString = " ";
+            for (y = 0; y < numbers.length; y++) {
+                if (i % numbers[y] === 0) {
+                    termString += terms[y];
+                }
+            }
+            if (termString != " ") {
+            console.log(termString);
+            }
+            else {
+                console.log(i);
+            }
         }
     }
 }
+
+// if you want to use JSON data into application, use Parse
+
