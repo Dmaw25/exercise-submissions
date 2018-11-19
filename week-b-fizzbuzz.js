@@ -123,6 +123,7 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
                 else if ((num%fizzNum)==0)
                 {
 
+                    
                     console.log('fizz');
 
                 }
@@ -161,39 +162,30 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
 */
 function fizzBuzz4(m,n,numbers,terms){
 
-    let numlength = numbers.length; 
-    let termlength = terms.length; 
-    let range = n-m; 
-
-    var numArr=[];
-    for (i=m;i<=n;i++){
-        numArr[i]=i; 
-    }
-
-    if (m<=n && numlength==termlength){
-
-            for (i=m;i<=n;i++)
+    var word;
+   
+    if (m<=n && numbers.length==terms.length){
+            for (;m<=n;m++)
             {
-                for (k=0;k<numlength;k++)
-                {
-                            if (((numArr[i]%numbers[k])==0))
-                            {
-                                
-                                   numArr[i]+=terms[k];
-                            
-
-                            }
-
-                            else {
-                                numArr[i]=i; 
-                            }
+                word = " "; 
+                for (k=0;k<(numbers.length);k++) {
+                     if (((m%numbers[k])===0)){ 
+                             word+=terms[k];
+                     } 
                  }
-                 console.log(numArr[i]);
+
+                 if (word ==" ")
+                 {
+                     console.log(m);
+                 }
+
+                 else{ console.log(word);}
+                
             }
      }
 
      else {
-        console.log('Error: m must be less than n');
+        console.log('Woah woah woah, wrong input');
      }
 
 
