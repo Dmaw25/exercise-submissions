@@ -58,13 +58,25 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
 function fizzBuzz4(m,n,numbers,terms){
-    function fizzBuzz3(m,n,fizzNum,buzzNum){
-        for (var i=m; i <= n; i++) {
-            for ()
-            if ((i % fizzNum == 0) && (i % buzzNum == 0)) {console.log('[]')
-        }   else if (i % buzzNum == 0) {console.log('[]')
-        }    else if (i % fizzNum == 0 ){ console.log('[]')
-      }  else console.log(i)}
+    var count = 0;
+    var string;
+    if(m <= n && numbers.length === terms.length) {
+        for(i=m; i<=n;i++){
+            count = 0;
+            string = "";
+            for(j=0; j<numbers.length;j++){
+                if(i%numbers[j] === 0){
+                    string += terms[j];
+                    count = 1;
+                }
+            }
+            if(count === 0){
+                console.log(i);
+            }else {
+                console.log(string);
+            }
+        }
+        }else{
+            console.log("No bueno");
+        }
 }
-
-
