@@ -16,9 +16,10 @@ public class WeekCChallenge {
 
 		//3. print the value of each of these variables to the console with a descriptive message
 		
-	System.out.println("Execute Calculator.java to see the answers to 1 2 and 3!");
+	System.out.println("Execute Calculator.java to see the answers to 1 2 and 3 in Nathan's Cat Calculator!");
 
 		//4. implement the static fizzBuzz method in this class and call it from the main method
+				System.out.println("Fizz...Buzz...");
 	}
 	
 
