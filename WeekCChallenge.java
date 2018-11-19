@@ -41,7 +41,7 @@ public class WeekCChallenge {
 		}else{
 			for (int i = m; i<n;i++){
 				for (int j = 0; j<numbers.length; j++){
-					if (i % numbers[j] =0){
+					if (i % numbers[j] ==0){
 						System.out.println(terms[j]);
 					}else {System.out.println(i);}
 				}
