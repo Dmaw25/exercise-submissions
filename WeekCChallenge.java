@@ -1,10 +1,10 @@
-public class WeekCChallenge {
+public class WeekCChallenge extends Calculator {
 
 	public static void main(String[] args){
 		
 		//1. create a new instance of the Calculator class
 
-	WeekCChallenge calc = new Calculator();
+	Calculator nate = new Calculator();
 
 		//2. call each of Calculator's instance methods: add, subtract, multiply, and divide
 		// with arguments of your choice, assigning the result to the variables below

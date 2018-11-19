@@ -1,6 +1,6 @@
 //scanners are a trick I learned over the weekend, they gather user input in the console.
 import java.util.Scanner;
-public class Calculator extends WeekCChallenge {
+public class Calculator {
 static int op = 0;
 //The scanner is named natescan because I wanted to add my own personal touch, obvi
 static Scanner natescan = new Scanner(System.in);
