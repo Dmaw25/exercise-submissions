@@ -82,6 +82,62 @@ function fizzBuzz3(m,n,fizzNum,buzzNum){
     Validation the m <= n is a plus. 
     The arrays may have any length, but validation that their length is the SAME is a plus. 
 */
-function fizzBuzz4(m,n,numbers,terms){
 
+function fizzBuzz4(m,n,numbers,terms){
+    if (m > n || numbers.length > terms.length || terms.length > numbers.length) {
+        console.log ("Error!");
+    }
+    
+    else {
+        for (i = m; i <= n; i++) {
+            termString = " ";
+            for (y = 0; y < numbers.length; y++) {
+                if (i % numbers[y] === 0) {
+                    termString = termString + terms[y];
+                }
+            }
+            if (termString != " ") {
+                console.log(termString);
+            }
+            else {
+                console.log(i);
+            }
+            
+        }
+    }
+}
+
+
+
+//i is linked to m and n
+//y is linked to numbers and terms
+function fizzBuzz5(m,n,numbers,terms){
+    var counter = 0;
+    //termString is for putting fizz and buzz together
+    var termString = "";
+    //searching for only fizz and only buzz
+    if (m<=n && numbers.length == terms.length) {
+        for(i=m; i<=n; i++) {
+            counter=0;
+            termString="";
+            //searches for fizzbuzz
+            for (y=0; y<numbers.length; y++) {
+                if (i%numbers[y] === 0) {
+                    termString += terms[y];
+                    counter=1;
+                }
+                //no fizz or buzz
+                if (counter === 0) {
+                    console.log(i);
+                } else {
+                //spits out fizz or buzz
+                    console.log(termString);
+                }
+            }
+            
+        }
+    }
+    else {
+        console.log("Invalid Input")
+    }
 }
