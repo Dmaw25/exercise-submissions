@@ -6,7 +6,7 @@ function append(parent, el) {
 }
 const apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=quilting';
 //const req = new Request(apiUrl);
-const ul = document.getElementById('MyLovelyBooks');
+const ol = document.getElementById('MyLovelyBooks');
 
 fetch(apiUrl)
     .then((resp) => resp.json())
@@ -29,7 +29,7 @@ fetch(apiUrl)
             append(li, br);
             append(a, div);
             append(a, art);
-            append(ul, li);
+            append(ol, li);
         })
     })
     .catch(function (error) {

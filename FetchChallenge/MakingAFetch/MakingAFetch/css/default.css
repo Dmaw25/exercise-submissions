@@ -3,15 +3,30 @@
   touch-action: manipulation;
   */
 }
-ul{
-    text-decoration:none;
+ol{
+    border:solid;
+    
 }
-li{
+li {
+    border:solid;
 
 }
 article{
 
 }
-a{
-
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:red;
+}
+h1{
+    text-align:center;
+}
+header{
+    font-family:Georgia;
+}
+div{
+    font-family:Cambria;
 }
