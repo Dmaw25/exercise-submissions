@@ -31,6 +31,7 @@ fetch(apiUrl)
             append(a, header);                  
             append(a, br);
             append(a, div);
+            append(a, br);
             append(a, art);
             append(ol, li);
         })
