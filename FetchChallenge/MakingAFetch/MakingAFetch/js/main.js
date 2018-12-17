@@ -4,12 +4,17 @@
 function append(parent, el) {
     return parent.appendChild(el);
 }
+//here is my api
 const apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=quilting';
 
+//Here is the list we will change
 const ol = document.getElementById('MyLovelyBooks');
 
+//fetch the api
 fetch(apiUrl)
+    //get a response
     .then((resp) => resp.json())
+    //make a function that gets the data from the api
     .then(function (data) {
         console.log(data);
         let author = data.items;
