@@ -5,7 +5,7 @@ function append(parent, el) {
     return parent.appendChild(el);
 }
 const apiUrl = 'https://www.googleapis.com/books/v1/volumes?q=quilting';
-//const req = new Request(apiUrl);
+
 const ol = document.getElementById('MyLovelyBooks');
 
 fetch(apiUrl)
@@ -38,5 +38,3 @@ fetch(apiUrl)
     .catch(function (error) {
         console.log(error);
     });
-
-// Your code here!
