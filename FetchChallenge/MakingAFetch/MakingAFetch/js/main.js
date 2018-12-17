@@ -16,17 +16,20 @@ fetch(apiUrl)
         return author.map(function (authors) {
             let li = createNode('li'),
                 a = createNode('a'),
+                img = createNode('img'),
                 br = createNode('br'),
                 div = createNode('div'),
                 art = createNode('article'),
                 header = createNode('header');
             a.setAttribute('href', `${authors.volumeInfo.canonicalVolumeLink}`, 'target', "_blank");
+            img.setAttribute('src', `${authors.volumeInfo.imageLinks.smallThumbnail}`);
             header.innerHTML = `${authors.volumeInfo.title}`;
             div.innerHTML = `${authors.volumeInfo.authors}`;
             art.innerHTML = `${authors.volumeInfo.description}`;
-            append(a, header);
+            append(a, img);
             append(li, a);
-            append(li, br);
+            append(a, header);                  
+            append(a, br);
             append(a, div);
             append(a, art);
             append(ol, li);
